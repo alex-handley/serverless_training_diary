@@ -1,8 +1,7 @@
-# An example of a JS CDK Typescript project
+# serverless_training_diary
 
 ## Description
 
-At JS we prefer to split up orcastration logic up as follows:
 - Network layer in the `NetworkStack`
 - Stateful layer (DB's etc) in the `StatefulStack`
 - Stateless layer (web workers, processors etc) in the `StatelessStack`
@@ -16,4 +15,3 @@ At JS we prefer to split up orcastration logic up as follows:
  * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk diff`        compare deployed stack with current state
  * `cdk synth`       emits the synthesized CloudFormation template
-# serverless_training_diary
