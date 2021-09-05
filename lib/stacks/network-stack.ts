@@ -21,14 +21,12 @@ export class NetworkStack extends cdk.Stack {
       maxAzs: vpcConfig[target].maxAzs,
       subnetConfiguration: [
         {
-          cidrMask: 20,
           name: `${target}-api-subnet-public`,
-          subnetType: ec2.SubnetType.PUBLIC,
+          subnetType: ec2.SubnetType.PUBLIC
         },
         {
-          cidrMask: 20,
           name: `${target}-api-subnet-private`,
-          subnetType: ec2.SubnetType.PRIVATE,
+          subnetType: ec2.SubnetType.PRIVATE
         },
       ],
     })
