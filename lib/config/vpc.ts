@@ -7,15 +7,15 @@ interface VpcConfig {
 
 export const vpcConfig: { [key in Target]: VpcConfig } = {
   [Target.DEV]: {
-    cidr: 'SET-ME/16',
+    cidr: '10.121.0.0/16',
     maxAzs: 2,
   },
   [Target.STAGING]: {
-    cidr: 'SET-ME/16',
+    cidr: '10.122.0.0/16',
     maxAzs: 2,
   },
   [Target.PROD]: {
-    cidr: 'SET-ME/16',
+    cidr: '10.123.0.0/16',
     maxAzs: 3,
   },
 }

@@ -18,7 +18,7 @@ export class NetworkStack extends cdk.Stack {
 
     this.vpc = new ec2.Vpc(this, 'Vpc', {
       cidr: vpcConfig[target].cidr,
-      maxAzs: vpcConfig[target].maxAzs, // Default is all AZs in region
+      maxAzs: vpcConfig[target].maxAzs,
       subnetConfiguration: [
         {
           cidrMask: 20,
